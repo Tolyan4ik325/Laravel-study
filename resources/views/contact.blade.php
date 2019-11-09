@@ -5,9 +5,8 @@
     <title></title>
 </head>
 <body>
-    <h1>Here we go!!!!!</h1>
-    <p><a href="/contact">Contact Us</a></p>
-    <p><a href="/about">About Us</a></p>
+    <h1>Contact Page</h1>
 
+     
 </body>
 </html>
