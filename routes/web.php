@@ -26,3 +26,5 @@ Route::get('/about', function () {
 
 
 Route::get('/projects', 'ProjectController@index');
+Route::post('/projects', 'ProjectController@store');
+Route::get('/projects/create', 'ProjectController@create');
