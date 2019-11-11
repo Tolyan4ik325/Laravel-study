@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <title></title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
 </head>
 <body>
-	@yield('content')
-    <ul>
-    	<li><a href="/contact">Contact Us</a></li>
-    	<li><a href="/about">About Us</a></li>
-    </ul>
+	<div class="container">
+		
+		@yield('content')
+	</div>
     
 
 </body>
