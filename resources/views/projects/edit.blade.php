@@ -12,7 +12,7 @@
 			<label class="label" for="title">Title</label>
 
 			<div class="control">
-				<input type="text" class="input" name="title" placeholder="Title" value="{{ $project->title }}">
+				<input type="text" class="input" name="title" placeholder="Title" value="{{ $project->title }}" required>
 			</div>
 		</div>
 
@@ -20,7 +20,7 @@
 			<label class="label" for="description">Description</label>
 
 			<div class="control">
-				<textarea name="description" class="textarea">{{ $project->description }}</textarea>
+				<textarea name="description" class="textarea" required>{{ $project->description }}</textarea>
 			</div>
 		</div>
 
