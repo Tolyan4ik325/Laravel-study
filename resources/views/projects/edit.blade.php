@@ -34,11 +34,11 @@
 	</form>
 
 	<form method="POST" action="/projects/{{ $project->id }}">
-		{{-- {{ method_field('DELETE') }}
-		{{ csrf_field() }} --}}
+		{{ method_field('DELETE') }}
+		{{ csrf_field() }}
 
-		@method('DELETE')
-		@csrf
+	{{-- 	@method('DELETE')
+		@csrf --}}
 		
 		<div class="field">
 
