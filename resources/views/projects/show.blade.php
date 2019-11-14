@@ -14,7 +14,7 @@
 		{{ csrf_field() }}
 
 	{{-- 	@method('DELETE')
-		@csrf --}}
+		@csrf --}} 
 		
 		<div class="field">
 
