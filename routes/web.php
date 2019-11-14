@@ -11,8 +11,15 @@
 |
 */
 
+use App\Repositories\UserRepository;
 
-Route::get('/', 'PagesController@home');
+// Route::get('/', 'PagesController@home');
+
+Route::get('/', function (UserRepository $users){
+	dd($users);
+
+	return view('welcome');
+});
 
 
 
