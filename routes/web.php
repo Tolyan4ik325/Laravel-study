@@ -11,12 +11,11 @@
 |
 */
 
-use App\Repositories\UserRepository;
-
+use App\Services\Twitter;
 // Route::get('/', 'PagesController@home');
 
-Route::get('/', function (UserRepository $users){
-	dd($users);
+Route::get('/', function (Twitter $twitter){
+	dd($twitter);
 
 	return view('welcome');
 });

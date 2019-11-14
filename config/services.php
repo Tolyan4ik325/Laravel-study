@@ -35,4 +35,9 @@ return [
         'secret' => env('STRIPE_SECRET'),
     ],
 
+    'twitter' => [
+        'key' => 'public-key',
+        'secret' => 'private-key'
+    ]
+
 ];
