@@ -11,14 +11,10 @@
 |
 */
 
-use App\Services\Twitter;
-// Route::get('/', 'PagesController@home');
 
-Route::get('/', function (Twitter $twitter){
-	dd($twitter);
+Route::get('/', 'PagesController@home');
 
-	return view('welcome');
-});
+
 
 
 
@@ -45,3 +41,6 @@ Route::delete('/completed-tasks/{task}', 'CompletedTasksController@destroy');
 // Route::get('/projects/{project}/edit', 'ProjectController@edit');
 // Route::patch('/projects/{project}', 'ProjectController@update');
 // Route::delete('/projects/{project}', 'ProjectController@destroy');
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
